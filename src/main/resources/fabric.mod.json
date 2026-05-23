@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "mucp1",
+	"version": "${version}",
+	"name": "使你不会玩1-我的世界1.20",
+	"description": "一个充满捣乱、陷阱和挑战的Minecraft 1.20模组",
+	"authors": [
+		"Open Code Studio"
+	],
+	"contact": {
+		"homepage": "https://github.com/Open-code-Studio/MUCP1-MC1.20",
+		"sources": "https://github.com/Open-code-Studio/MUCP1-MC1.20"
+	},
+	"license": "MIT",
+	"icon": "assets/mucp1/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.opencodestudio.mucp1.MUCP1Mod"
+		],
+		"modmenu": [
+			"com.opencodestudio.mucp1.config.MUCP1ModMenu"
+		]
+	},
+	"mixins": [
+		"mucp1.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"cloth-config": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
